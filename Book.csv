@@ -1,0 +1,5 @@
+﻿BOOK_ID,BOOK_TITLE,AUTHOR,EDITION,CATEGORY,BOOKCOPIES,COST_PER_BOOK
+1,Automobile Engineeering,Dr.JM Robert,01:01:00,Technical,15,250
+2,Pyhton for DS,Prof.Adam Walley,11.2,Technical,20,360
+3,Learn Python Easily,Prof Mathew Austin,3,Technical,30,700
+4,Great History of India,Dr. Seema Bakshi,5.6,Literature,14,640
