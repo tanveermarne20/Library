@@ -6,7 +6,7 @@
 We are analysing Library Management data to identify high-performing Member and understand Member behavior. The primary objective is to enhance and optimize management strategies. 
 
 ## Purposes of the Project
-The main goal of this project is to gain understanding from Walmart's sales data, exploring the various factors that influence sales across different branches.
+The purpose of the Library Management System project is to create an efficient and automated solution for managing the various aspects of a library.
 
 ## About Data
 This project's data was obtained from the Kaggle.
@@ -52,13 +52,11 @@ The data contains 3 tables
 
 > Perform an analysis on the data to gain insights into different product lines, determine the top-performing product lines, and identify areas for improvement in other product lines.
 
-2.	Sales Analysis
-   
-> The objective of this analysis is to address the inquiry regarding the sales trends of the product. The outcomes of this analysis can assist in evaluating the efficiency of each applied sales strategy in the business and determining necessary modifications to increase sales.
 
-3.	Customer Analysis
+2.	Member Analysis
 
-> This analysis is focused on identifying various customer segments, understanding purchasing trends, and evaluating the profitability associated with each of these customer segments.
+> examining the patterns, behaviors, and characteristics of library members to derive meaningful insights. This analysis contributes to optimizing library services, improving member satisfaction, and making informed decisions
+
 
 ## Approach Used
 ***1.	Data Wrangling***
