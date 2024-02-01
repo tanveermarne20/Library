@@ -10,7 +10,8 @@ The purpose of the Library Management System project is to create an efficient a
 
 ## About Data
 This project's data was obtained from the Kaggle.
-The data contains 3 tables 
+The data contains 3 tables
+Book-table
 | Column            | Description                                   | Data Type        |
 |-------------------|-----------------------------------------------|------------------|
 | book_id        | Particular book id                            | VARCHAR(30)      |
@@ -21,7 +22,7 @@ The data contains 3 tables
 | bookcopies     | Number of copies available                     | NUMBER(3)     |
 | cost_per_book  | Cost of single book                           | NUMBER(4)     |
 
-
+Member-table
 | Column            | Description                                   | Data Type        |
 |-------------------|-----------------------------------------------|------------------|
 | member_id          | Particular member id                           | VARCHAR(30)      |
@@ -33,7 +34,7 @@ The data contains 3 tables
 | membership_end_date     | Membership end date                       | Date    |
 
 
-
+Book_Issue_Details -table
 | Column            | Description                                   | Data Type        |
 |-------------------|-----------------------------------------------|------------------|
 | issue_id          | Particular member id                           | VARCHAR(30)      |
@@ -55,7 +56,7 @@ The data contains 3 tables
 
 2.	Member Analysis
 
-> examining the patterns, behaviors, and characteristics of library members to derive meaningful insights. This analysis contributes to optimizing library services, improving member satisfaction, and making informed decisions
+> Examining the patterns, behaviors, and characteristics of library members to derive meaningful insights. This analysis contributes to optimizing library services, improving member satisfaction, and making informed decisions
 
 
 ## Approach Used
