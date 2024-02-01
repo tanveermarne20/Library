@@ -1,4 +1,4 @@
-![Sample Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztL0WzSHxYdzc8FmFZ8pCYA8GxsAThVhioAoQIrfPmnM2527iMnLvRXyd_5VO1xYdRg&usqp=CAU)
+![Sample Image](https://petapixel.com/assets/uploads/2017/04/119_074_New-York-Public-Library-Reading-Room_NY-2009-BG.jpg)
 
 
 # Library-Management-Data-Analysis--SQL-Project
@@ -18,8 +18,21 @@ The data contains 3 tables
 | author         | Name of Author                                | VARCHAR(30)      |
 | edition        | Edition of book                               | VARCHAR(30)      |
 | category       | Category of book                              | VARCHAR(10)      |
-| bookcopies     | Number of copies available                     | VARCHAR(100)     |
-| cost_per_book  | Cost of single book                           | VARCHAR(100)     |
+| bookcopies     | Number of copies available                     | NUMBER(3)     |
+| cost_per_book  | Cost of single book                           | NUMBER(4)     |
+
+
+| Column            | Description                                   | Data Type        |
+|-------------------|-----------------------------------------------|------------------|
+| member_id          | Particular member id                           | VARCHAR(30)      |
+| member_name        | Particular member name                         | VARCHAR(5)       |
+| age                | Age of member                                  | VARCHAR(30)      |
+| gender             | Gender of member                               | NUMBER(2)      |
+| address                 | Address of member                         | VARCHAR(10)      |
+| membership_start_date   | Membership start date                     | Date    |
+| membership_end_date     | Membership end date                       | Date    |
+
+
 
 
 ## Analysis List:
