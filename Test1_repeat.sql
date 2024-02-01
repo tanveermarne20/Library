@@ -3,7 +3,8 @@
 SELECT *FROM MEMBER;
 SELECT *FROM book;
 SELECT *FROM BOOK_ISSUE_DETAILS;
---1.Write a query to display member name along with no of times he/she issue books till now
+--1.Write a query to display member name along with no of times 
+--he/she issue books till now
 SELECT 
 M.MEMBER_NAME,
 COUNT(B.ISSUE_ID) AS TOTAL_NUMBER
@@ -83,10 +84,25 @@ EXTRACT( YEAR FROM MEMBERSHIP_END_DATE)=21
 GROUP BY MEMBER_NAME,
 GENDER;
 
+SELECT COUNT(*)
+FROM MEMBER
+WHERE TO_CHAR(membership_end_date,'YYYY') = '2021'
+AND GENDER = 'F';
+
 
 --9.Write a query to display how many senior citizen (age>60) join Membership
 --in last year?
-
+SELECT COUNT(*)
+FROM MEMBER M 
+WHERE AGE > 60
+AND TO_CHAR(m.membership_start_date,'YYYY') =
+TO_CHAR(ADD_MONTHS(SYSDATE,-12),'YYYY');
 
 
 --10.Write a query to display every month year wise penalty received
+SELECT
+TO_CHAR(RETURN_DATE,'MON-YYYY'),
+COUNT(PENALTY_IF_ANY)
+FROM book_issue_details
+GROUP BY TO_CHAR(RETURN_DATE,'MON-YYYY');
+

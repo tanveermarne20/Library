@@ -30,7 +30,7 @@ VALUES(3,'Learn Python Easily ','Prof Mathew Austin','3','',30,700);
 INSERT INTO BOOK(
 BOOK_ID ,BOOK_TITLE ,AUTHOR ,EDITION ,CATEGORY ,BOOKCOPIES,COST_PER_BOOK )
 VALUES(4,'Great history of India','Dr.Seema Bakshi','5.6','Literature',14,640);
-
+commit;
 
 
 --Creating Table MEMBER
@@ -55,7 +55,7 @@ INSERT INTO MEMBER
 VALUES('M103','Riya Tomar',41,'F','Mundhawa,Pune','22-04-2015','29-06-2022');
 INSERT INTO MEMBER
 VALUES('M104','Jagdish Patil',20,'M','Kharadi,Pune','01-06-2019',null);
-
+COMMIT;
 
 --Creating Table BOOK_ISSUE_DETAILS
 CREATE TABLE BOOK_ISSUE_DETAILS (
@@ -84,3 +84,5 @@ INSERT INTO BOOK_ISSUE_DETAILS
 VALUES(10004,5,'M111','11-01-2021',NULL,1,'Not Return Yet',0);
 INSERT INTO BOOK_ISSUE_DETAILS
 VALUES(10005,1,'M109','04-01-2021','16-01-2021',1,'Return with Penalty',130);
+
+COMMIT;
