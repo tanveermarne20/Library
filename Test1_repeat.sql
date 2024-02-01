@@ -35,7 +35,7 @@ AND M.MEMBER_ID='M107' AND M.MEMBER_ID='M167';
 
 --4.Write a query to display total no of books and their cost
 SELECT 
-COUNT(BOOK_ID) AS TOTAL_COUNT,
+SUM(BOOKCOPIES) AS TOTAL_COUNT,
 SUM(BOOKCOPIES * COST_PER_BOOK) AS TOTAL_COST
 FROM BOOK;
 
@@ -72,7 +72,6 @@ B.ISSUE_DATE
 FROM MEMBER M LEFT JOIN BOOK_ISSUE_DETAILS B
 ON(M.MEMBER_ID=B.MEMBER_ID)
 WHERE B.ISSUE_DATE IS NULL;
-
 --8.Write a query to display how many women left membership in 2021
 SELECT 
 MEMBER_NAME,
@@ -99,7 +98,7 @@ AND TO_CHAR(m.membership_start_date,'YYYY') =
 TO_CHAR(ADD_MONTHS(SYSDATE,-12),'YYYY');
 
 
---10.Write a query to display every month year wise penalty received
+--10.Write a query to display every month-year wise penalty received
 SELECT
 TO_CHAR(RETURN_DATE,'MON-YYYY'),
 COUNT(PENALTY_IF_ANY)
@@ -109,3 +108,7 @@ GROUP BY TO_CHAR(RETURN_DATE,'MON-YYYY');
 DESC BOOK;
 DESC MEMBER;
 DESC BOOK_ISSUE_DETAILS;
+
+SELECT 
+TO_CHAR(ADD_MONTHS(SYSDATE,-12),'YYYY')
+FROM DUAL;
